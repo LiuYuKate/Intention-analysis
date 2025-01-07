@@ -1,0 +1,48 @@
+Epoch 1/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:19<00:00, 37.05it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.9498985106827783, Train accuracy: 0.5765027322404371
+Validation loss: 0.8638870706323718, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 2/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 41.13it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8816935123234498, Train accuracy: 0.6243169398907104
+Validation loss: 0.8415146926061703, Validation accuracy: 0.6506147540983607, F1: 0.5182420889210538, Precision: 0.5752680870188555, Recall: 0.6506147540983607
+Epoch 3/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 40.98it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8569643976665585, Train accuracy: 0.632172131147541
+Validation loss: 0.8158404003075563, Validation accuracy: 0.6550546448087432, F1: 0.5289001172362908, Precision: 0.5559436149468291, Recall: 0.6550546448087432
+Epoch 4/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 41.57it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8247335136262446, Train accuracy: 0.6440403005464481
+Validation loss: 0.7826162819328204, Validation accuracy: 0.6673497267759563, F1: 0.554029668492787, Precision: 0.5580132749994235, Recall: 0.6673497267759563
+Epoch 5/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 41.78it/s]
+Train loss: 0.791225558503078, Train accuracy: 0.6590676229508197
+Validation loss: 0.7545985486663755, Validation accuracy: 0.6847677595628415, F1: 0.5915794711927179, Precision: 0.6937641611651376, Recall: 0.6847677595628415
+Epoch 6/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:18<00:00, 40.56it/s]
+Train loss: 0.764314427320423, Train accuracy: 0.6740949453551912
+Validation loss: 0.7324871958279219, Validation accuracy: 0.6909153005464481, F1: 0.610574402991307, Precision: 0.680029310087204, Recall: 0.6909153005464481
+Epoch 7/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 41.32it/s]
+Train loss: 0.7456053845136543, Train accuracy: 0.6819501366120219
+Validation loss: 0.7157384813483295, Validation accuracy: 0.6956967213114754, F1: 0.6205977126992616, Precision: 0.6824885781497657, Recall: 0.6956967213114754
+Epoch 8/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 42.34it/s]
+Train loss: 0.7284986268871468, Train accuracy: 0.6915129781420765
+Validation loss: 0.7020590235301054, Validation accuracy: 0.7032103825136612, F1: 0.6378897758066145, Precision: 0.6899868532078778, Recall: 0.7032103825136612
+Epoch 9/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:18<00:00, 40.41it/s]
+Train loss: 0.712576236474058, Train accuracy: 0.6969774590163934
+Validation loss: 0.6898466047367763, Validation accuracy: 0.707308743169399, F1: 0.6486159759465221, Precision: 0.6906796452455957, Recall: 0.707308743169399
+Epoch 10/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:17<00:00, 42.11it/s]
+Train loss: 0.7011914146565349, Train accuracy: 0.7040642076502732
+Validation loss: 0.6789993044457149, Validation accuracy: 0.7100409836065574, F1: 0.6554768814859081, Precision: 0.6915151878381022, Recall: 0.7100409836065574

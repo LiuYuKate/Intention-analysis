@@ -1,0 +1,58 @@
+Epoch 1/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:21<00:00, 33.78it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.9859138354251945, Train accuracy: 0.6222677595628415
+Validation loss: 0.8905321701628263, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 2/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 36.11it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.9058122840084013, Train accuracy: 0.6223531420765027
+Validation loss: 0.8543550463322082, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 3/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:19<00:00, 37.13it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8577227853849286, Train accuracy: 0.6223531420765027
+Validation loss: 0.8098053381742676, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 4/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:19<00:00, 37.21it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8343564883037343, Train accuracy: 0.6223531420765027
+Validation loss: 0.7931101835164868, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 5/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 36.44it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8206504708349379, Train accuracy: 0.6223531420765027
+Validation loss: 0.7885420793066911, Validation accuracy: 0.6451502732240437, F1: 0.5059949620594638, Precision: 0.41621887504105826, Recall: 0.6451502732240437
+Epoch 6/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 36.54it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.8072866193665181, Train accuracy: 0.624146174863388
+Validation loss: 0.7678997941681596, Validation accuracy: 0.6461748633879781, F1: 0.5122784755395615, Precision: 0.44979345060897, Recall: 0.6461748633879781
+Epoch 7/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 35.78it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.791948773943987, Train accuracy: 0.647797131147541
+Validation loss: 0.7566224540191921, Validation accuracy: 0.6745218579234973, F1: 0.6135679654548251, Precision: 0.5630210810564131, Recall: 0.6745218579234973
+Epoch 8/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:19<00:00, 37.33it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.777211687685362, Train accuracy: 0.6610314207650273
+Validation loss: 0.7503612274354924, Validation accuracy: 0.6707650273224044, F1: 0.6189341721505884, Precision: 0.5751976447075491, Recall: 0.6707650273224044
+Epoch 9/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 35.92it/s]
+/home/liuyu/miniconda3/envs/aes/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Train loss: 0.7671281763357543, Train accuracy: 0.6635928961748634
+Validation loss: 0.7417700745043208, Validation accuracy: 0.6707650273224044, F1: 0.6150226166544822, Precision: 0.567871813767867, Recall: 0.6707650273224044
+Epoch 10/10
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 732/732 [00:20<00:00, 35.82it/s]
+Train loss: 0.7572028981979753, Train accuracy: 0.6629952185792349
+Validation loss: 0.7349172695412662, Validation accuracy: 0.6769125683060109, F1: 0.620462872765214, Precision: 0.7285585170222775, Recall: 0.6769125683060109

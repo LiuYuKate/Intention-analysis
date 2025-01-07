@@ -98,7 +98,48 @@ class SentimentDataset(Dataset):
         }
     
 
-# Model
+# CNN Model
+class CNNSentimentClassifier(nn.Module):
+    def __init__(self, vocab_size, embedding_dim, n_classes, max_len):
+        super(CNNSentimentClassifier, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
+        self.conv1 = nn.Conv1d(in_channels=embedding_dim, out_channels=128, kernel_size=3, padding=1)
+        self.conv2 = nn.Conv1d(in_channels=128, out_channels=64, kernel_size=3, padding=1)
+        self.relu = nn.ReLU()
+        self.pool = nn.AdaptiveMaxPool1d(output_size=1)
+        self.drop = nn.Dropout(p=0.3)
+        self.out = nn.Linear(64, n_classes)
+
+    def forward(self, input_ids, attention_mask=None):
+        embedded = self.embedding(input_ids)  # Shape: (batch_size, max_len, embedding_dim)
+        embedded = embedded.permute(0, 2, 1)  # Shape: (batch_size, embedding_dim, max_len)
+        conv1_out = self.relu(self.conv1(embedded))  # Shape: (batch_size, 128, max_len)
+        conv2_out = self.relu(self.conv2(conv1_out))  # Shape: (batch_size, 64, max_len)
+        pooled = self.pool(conv2_out).squeeze(-1)  # Shape: (batch_size, 64)
+        output = self.drop(pooled)
+        return self.out(output)
+
+
+# LSTM Model
+class LSTMSentimentClassifier(nn.Module):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_classes, n_layers=1):
+        super(LSTMSentimentClassifier, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
+        self.lstm = nn.LSTM(
+            input_size=embedding_dim, hidden_size=hidden_dim, num_layers=n_layers, batch_first=True, bidirectional=True
+        )
+        self.drop = nn.Dropout(p=0.3)
+        self.out = nn.Linear(hidden_dim * 2, n_classes)  # Bidirectional: 2 * hidden_dim
+
+    def forward(self, input_ids, attention_mask=None):
+        embedded = self.embedding(input_ids)  # Shape: (batch_size, max_len, embedding_dim)
+        lstm_out, _ = self.lstm(embedded)  # Shape: (batch_size, max_len, hidden_dim * 2)
+        pooled = torch.mean(lstm_out, dim=1)  # Shape: (batch_size, hidden_dim * 2)
+        output = self.drop(pooled)
+        return self.out(output)
+
+
+# BERT Model
 class SentimentClassifier(nn.Module):
     def __init__(self, n_classes):
         super(SentimentClassifier, self).__init__()
@@ -254,6 +295,8 @@ test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
 
 # Training and Evaluation
 model = SentimentClassifier(n_classes=len(label_encoder.classes_))
+# model = CNNSentimentClassifier(vocab_size=30522, embedding_dim=128, n_classes=len(label_encoder.classes_), max_len=128)
+# model = LSTMSentimentClassifier(vocab_size=30522, embedding_dim=128, hidden_dim=128, n_classes=len(label_encoder.classes_), n_layers=1)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
 model.device = device
